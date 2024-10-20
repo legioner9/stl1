@@ -8,6 +8,6 @@
 #! ${REPO_PATH}/${name_repo}/.d/
 
 if ! dexec2err__ ${REPO_PATH}/${name_repo}/.d/.ham/main/main.fn.lst.d; then
-    plt_info "in ${REPO_PATH}/${name_repo}/.d/.ham/main/main.ham : FAIL_EXEC : dexec2err__ ${REPO_PATH}/tgu/.d/.ham/main/main.fn.lst.d: return 1"
+    echo "in ${REPO_PATH}/${name_repo}/.d/.ham/main/main.ham : FAIL_EXEC : dexec2err__ ${REPO_PATH}/tgu/.d/.ham/main/main.fn.lst.d: return 1" >&2
     return 1
 fi
